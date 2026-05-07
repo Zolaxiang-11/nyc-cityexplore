@@ -90,7 +90,7 @@
         "细节探索：鼠标悬停在特定邮编区域，可查看具体的租金与薪资数值。",
         "区域刷选（核心）：按住 Shift + 鼠标左键拖拽 在地图上框选你感兴趣的特定区域，下方的散点图会即时联动过滤，帮你精准对比该局部的经济生态 。"
       ],
-      "iframeSrc": "./apps/05-economy/index.html?compact=1&v=20260507-routerfix",
+      "iframeSrc": "./apps/05-economy/?compact=1&v=20260507-indexpath",
       "iframeTitle": "纽约经济账本可视化",
       "iframeHeight": "1040px",
       "sourceReference": {
