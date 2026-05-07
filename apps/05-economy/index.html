@@ -2,13 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Vue Router 从 <base> 读取部署前缀；GitHub Pages 项目站必须在仓库子路径下匹配路由 -->
-    <base href="./" />
+    <script>
+      (function () {
+        var href = new URL("./", window.location.href).href;
+        var b = document.createElement("base");
+        b.href = href;
+        var meta = document.querySelector("meta[charset]");
+        if (meta) meta.insertAdjacentElement("afterend", b);
+        else document.head.insertBefore(b, document.head.firstChild);
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nyc-pulse</title>
-    <script type="module" crossorigin src="./assets/index-CJyjUeet.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-hCltcHGh.css">
+    <script type="module" crossorigin src="./assets/index-CJyjUeet.js?v=20260507-routerfix"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-hCltcHGh.css?v=20260507-routerfix">
   </head>
   <body>
     <div id="app"></div>
